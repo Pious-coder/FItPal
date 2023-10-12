@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Kalam:wght@300;400;700&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    transition: all 1s ease-in-out;
+    background-color: #F5C33B;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FA6400;
+    position: absolute;
+    top: 25%;
+    background: #fff;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+
+.logo span {
+    color: #F5C33B;
+    font-family: 'Dancing Script', cursive;
+}
+
+.dot {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.dot1 {
+    background: #FA6400;
+    top: 15%;
+    left: 10%;
+}
+
+.dot2 {
+    background: #d6834c;
+    width: 10px;
+    height: 10px;
+    top: 23%;
+    left: 25%;
+}
+
+.dot3 {
+    width: 10px;
+    height: 10px;
+    background: #e64413;
+    top: 17%;
+}
+
+.dot4 {
+    background: #089e08;
+    top: 23%;
+    right: 20%;
+}
+
+.dot5 {
+    background: #d6834c;
+    top: 30%;
+    right: 10%;
+    width: 10px;
+    height: 10px;
+}
+
+.dot6 {
+    background: #d80d0d;
+    top: 45%;
+    right: 5%;
+}
+
+.dot7 {
+    background: #d6834c;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 25%;
+}
+
+.dot8 {
+    background: #089e08;
+    top: 40%;
+    left: 13%;
+}
+
+.content {
+    position: absolute;
+    bottom: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.content h2 {
+    font-size: 2rem;
+}
+
+.content p {
+    font-family: 'Kalam', cursive;
+    text-align: center;
+}
+
+.btn {
+    position: absolute;
+    bottom: 20%;
+}
+
+.btn button {
+    padding: 10px 90px;
+    border: none;
+    border-radius: 30px;
+    background: #FA6400;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn button::before {
+    content: '';
+    height: 100%;
+    width: 0%;
+    background: #F5C33B;
+    z-index: -1;
+    transition: all 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btn button:hover {
+    font-family: 'Kalam', cursive;
+    border: 2px solid #FA6400;
+    color: #000;
+}
+
+.btn button:hover::before {
+    width: 100%;
+}

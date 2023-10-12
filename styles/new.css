@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Kalam:wght@300;400;700&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    transition: all 1s ease-in-out;
+    background-color: #ffffff;
+}
+
+.welcome-container p {
+    font-family: 'Kalam', cursive;
+}
+
+#welcomeMessage {
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: absolute;
+    top: 20%;
+    left: 17%;
+    font-size: 2rem;
+    z-index: 4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FA6400;
+
+}
+
+.logo span {
+    color: #F5C33B;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+}
+
+form label  span {
+    font-family: 'Kalam', cursive;
+    color: #868080;
+    font-weight: 500;
+    margin-left: 90px;
+    cursor: pointer;
+    position: absolute;
+    top: 180px;
+    right: 15px;
+    transition: all 1s ease-in-out;
+}
+
+.two {
+    position: absolute;
+    top: 78px;
+    right: 1px;
+}
+
+form label span:hover,
+.two:hover {
+    font-weight: bold;
+    background-image: linear-gradient(to right, #fa6400, #f5c33b);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+input {
+    padding: 10px 60px;;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 2px solid #000;
+}
+
+input::placeholder {
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn button {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    border: none;
+    background-color: #FA6400;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 12px 55px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.btn button::before {
+    content: '';
+    height: 100%;
+    width: 0%;
+    background: #F5C33B;
+    z-index: -1;
+    transition: all 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btn button:hover::before {
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+    background-position: cover;
+    position: absolute;
+    top: 150px;
+    right: -70px;
+}
+
+
+.blurred-img {
+    width: 100%;
+    filter: blur(20px);
+    transition: filter 1s ease-out;
+}
+
+.blurred-img.loaded {
+    filter: blur(0);
+}

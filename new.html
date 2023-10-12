@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPal</title>
+    <!-- ! Font Awesome Cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- ! Stylesheet Link -->
+    <link rel="stylesheet" href="styles/new.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <div id="welcomeMessage">
+            <p>Register</p>
+        </div>
+    </div>
+    <div class="container">
+        <a href="index.html"><i class="fa-solid fa-arrow-left-long arrow"></i></a>
+        <div class="logo">
+                <h1>Fit<span>Pa</span>l</h1>
+        </div>
+        <div class="login">
+            <form id="loginForm">
+                <label for="username">username</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your name">
+                <label for="username">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                <label for="password">Password <span><i class="fa-regular fa-eye-slash"></i></span></label>
+                <input type="password" id="password" name="password" placeholder="Enter password">
+                <label for="password">Password <span><i class="fa-regular fa-eye-slash two"></i></span></label>
+                <input type="password" id="password" name="password" placeholder="Confirm password">
+            </form>
+            <div class="btn">
+                <button onclick="login()"><a href="notify.html">Register</a></button>
+            </div>
+        </div>
+        <div class="image">
+            <img src="/src/signin-bottom-low.jpg" data-src="/src/signin-bottom.jpg" alt="" class="blurred-img lazy-img">
+        </div>
+    </div>
+    <script src="JS/new.js"></script>
+</body>
+</html>

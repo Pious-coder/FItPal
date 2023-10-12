@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Kalam:wght@300;400;700&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    transition: all 1s ease-in-out;
+    background-color: #EFEEEC;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FA6400;
+}
+
+.logo span {
+    color: #F5C33B;
+    font-family: 'Dancing Script', cursive;
+}
+
+.sub-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.sub-header h2 {
+    font-family: 'Kalam', cursive;
+    font-weight: bold;
+    text-align: center;
+}
+
+.phone-notify {
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+.blurred-img {
+    width: 100%;
+    filter: blur(20px);
+    transition: filter 1s ease-out;
+}
+
+.blurred-img.loaded {
+    filter: blur(0);
+}
+
+.dot {
+    background-color: #F5C33B;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -7px;
+    right: 0;
+    border-radius: 50%;
+    box-shadow: 2px 4px 5px #FA6400;
+}
+
+.notify {
+    width: 80%;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 1s ease-in-out;
+}
+
+.notify:hover {
+    box-shadow: 2px 6px 9px #F5C33B;
+    transform: scale(1.1);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.details h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FA6400;
+}
+
+.details h1 span {
+    color: #F5C33B;
+    font-family: 'Dancing Script', cursive;
+}
+
+.details p {
+    font-family: 'Kalam', cursive;
+    color: #5a5555;
+    font-size: 1.2em;
+}
+
+.marked-notify {
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    top: 370px;
+    z-index: 3;
+}
+
+.acheived {
+    display: flex;
+    margin: 8px;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.acheived i {
+    margin-right: 10px;
+    font-size: 1.8rem;
+    background-image: linear-gradient(to right, #fa6400, #f5c33b);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+}
+
+.acheived p {
+    color: #5a5555;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn button {
+    border: none;
+    background-color: #F5C33B;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 12px 55px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn button::before {
+    content: '';
+    height: 100%;
+    width: 0%;
+    background: #FA6400;
+    z-index: -1;
+    transition: all 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btn button:hover::before {
+    width: 100%;
+}
+
+.later {
+    z-index: 4;
+    margin: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Kalam', cursive;
+}
+
+.later  p a {
+    color: #FA6400;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Kalam', cursive;
+    text-decoration: none;
+}
+
+.later p a:hover {
+    color: #F5C33B;
+    transition: all 1s ease-in-out;
+}
