@@ -20,13 +20,27 @@ body {
 }
 
 #welcomeMessage {
-    font-size: 1.3rem;
     font-weight: bold;
     position: absolute;
-    top: 20%;
-    left: 17%;
+    top: 15%;
+    left: 29%;
+    transform: matrix(1, -0.20, 0, 1, 0, 0 );
     font-size: 2rem;
     z-index: 4;
+    animation: bounce ;
+    -webkit-animation: bounce ;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); 
+    } 
+    40% {
+        transform: translateY(-30px); 
+    }
+    60% {
+        transform: translateY(15px); 
+    }
 }
 
 .container {
@@ -61,7 +75,7 @@ body {
 
 .login {
     position: absolute;
-    top: 50%;
+    top: 56%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 4;
@@ -101,7 +115,7 @@ form label span:hover,
 }
 
 input {
-    padding: 10px 60px;;
+    padding: 10px 60px 10px 10px;
     margin-bottom: 10px;
     border-radius: 20px;
     border: 2px solid #000;
