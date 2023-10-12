@@ -107,12 +107,6 @@ input {
     border: 2px solid #000;
 }
 
-input::placeholder {
-    font-weight: bold;
-    position: absolute;
-    left: 10px;
-}
-
 .btn {
     display: flex;
     align-items: center;
