@@ -12,6 +12,7 @@ body {
     justify-content: center;
     max-width: 400px;
     transition: all 1s ease-in-out;
+    max-height: 60vh;
 }
 
 .container {
