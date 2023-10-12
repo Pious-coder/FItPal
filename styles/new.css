@@ -27,8 +27,7 @@ body {
     transform: matrix(1, -0.20, 0, 1, 0, 0 );
     font-size: 2rem;
     z-index: 4;
-    animation: bounce ;
-    -webkit-animation: bounce ;
+    animation: bounce 1s infinite;
 }
 
 @keyframes bounce {
