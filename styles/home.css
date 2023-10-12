@@ -38,6 +38,24 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+
+#welcomeMessage2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 30px;;
+
+}
+
+#welcomeMessage2 p span {
+    font-family: 'Kalam', cursive;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #fa6400, #f5c33b);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
 .container {
     display: flex;
     flex-direction: column;

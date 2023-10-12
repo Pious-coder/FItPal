@@ -15,6 +15,6 @@ document.addEventListener('DOMContentLoaded', () =>{
         setTimeout(() => {
             welcomeMessage.style.display = 'none';
             container.style.display = 'block';
-        }, 5000);
+        }, 3000);
     };
 });
