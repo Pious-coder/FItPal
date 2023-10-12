@@ -124,7 +124,7 @@ body {
 }
 
 .content h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .content p {
@@ -134,7 +134,7 @@ body {
 
 .btn {
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
 }
 
 .btn button {
