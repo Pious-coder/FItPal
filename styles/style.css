@@ -26,6 +26,7 @@ body {
     align-items: center;
     justify-content: center;
     color: #FA6400;
+    margin-top: 20px;
 }
 
 .logo span {
@@ -39,6 +40,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 4;
+    margin-top: 10px;
 }
 
 .welcome h2 {
@@ -55,7 +58,9 @@ body {
 
 .image {
     width: 100%;
-    background-position: cover;;
+    background-position: cover;
+    margin-top: -20px;
+    z-index: 2;
 }
 
 
