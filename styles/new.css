@@ -13,6 +13,7 @@ body {
     max-width: 400px;
     transition: all 1s ease-in-out;
     background-color: #ffffff;
+    width: 100vw;
 }
 
 .welcome-container p {
