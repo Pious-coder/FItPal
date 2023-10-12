@@ -13,21 +13,7 @@ body {
     max-width: 400px;
     transition: all 1s ease-in-out;
     background-color: #ffffff;
-    width: 100vw;
-}
-
-.welcome-container p {
-    font-family: 'Kalam', cursive;
-}
-
-#welcomeMessage {
-    font-weight: bold;
-    position: absolute;
-    top: 15%;
-    left: 29%;
-    transform: matrix(1, -0.20, 0, 1, 0, 0 );
-    font-size: 2rem;
-    z-index: 4;
+    overflow-x: hidden;
 }
 
 .container {
@@ -59,6 +45,19 @@ body {
     font-family: 'Dancing Script', cursive;
 }
 
+.welcome-container p {
+    font-family: 'Kalam', cursive;
+}
+
+#welcomeMessage {
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    left: 29%;
+    transform: matrix(1, -0.20, 0, 1, 0, 0 );
+    font-size: 2rem;
+    z-index: 4;
+}
 
 .login {
     position: absolute;
