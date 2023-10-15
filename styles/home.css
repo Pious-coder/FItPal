@@ -297,15 +297,20 @@ body {
     justify-content: center;
 }
 
-.foooter1 i,
+.footer1 i,
 .footer2 i {
     font-size: 1.5rem;
     cursor: pointer;
 }
 
-.foooter1 .active {
+.footer1 .active {
     margin-right: 30px;
     color: #383636;
+}
+
+.footer1 .active:hover {
+    color: #fa6400;
+    transition: all 1s ease-in-out;
 }
 
 .footer2 {
@@ -332,4 +337,9 @@ body {
 
     .footer2 .bell {
     color: #948d8d;
+}
+
+.footer2 .bell:hover {
+    color: #ed9860;
+    transition: all 1s ease-in-out;
 }

@@ -45,7 +45,7 @@ body {
 }
 
 .logo h1 {
-    animation: bounce 1s infinite;
+    animation: bounce .5s infinite;
 }
 
 

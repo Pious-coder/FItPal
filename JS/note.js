@@ -14,4 +14,4 @@ function changeDivColor() {
     });
 };
 
-setInterval(changeDivColor, 1000)
+setInterval(changeDivColor, 0095)
