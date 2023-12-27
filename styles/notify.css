@@ -178,21 +178,14 @@ body {
     border-radius: 20px;
     cursor: pointer;
     text-decoration: none;
-    z-index: 0;
+    transition: all 1s ease-in-out;
     overflow: hidden;
     position: relative;
 }
 
-.btn button::before {
-    content: '';
-    height: 100%;
-    width: 0%;
+.btn button:hover{
     background: #FA6400;
-    z-index: -1;
-    transition: all 1s ease-in-out;
-    position: absolute;
-    top: 0;
-    right: 0;
+    transform: scale(1.2);
 }
 
 .btn button:hover::before {
